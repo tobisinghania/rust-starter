@@ -4,7 +4,7 @@
 // simplest method of use, but sacrifices some flexibility.
 use tracing_subscriber;
 
-use sample_app::cli::{Cli, CliError};
+use sample_app::cli::Cli;
 use std::process::exit;
 use tracing::error;
 

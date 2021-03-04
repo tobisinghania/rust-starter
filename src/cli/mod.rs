@@ -28,7 +28,7 @@ impl Cli {
         let opts: Opts = Opts::parse();
 
         let config_files = opts.configs.unwrap_or(vec![]);
-        let settings = init_config(config_files)?;
+        let _settings = init_config(config_files)?;
 
         if let Some(Subcommand::Completion(ref c)) = opts.subcommand {
             print_completions(c);
