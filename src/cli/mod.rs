@@ -6,7 +6,7 @@ use crate::conf::init_config;
 use clap::Clap;
 use clap::{crate_authors, crate_version};
 use thiserror::Error;
-use tracing::{debug, info};
+use tracing::debug;
 
 pub struct Cli;
 
@@ -33,6 +33,7 @@ impl Cli {
         if let Some(Subcommand::Completion(ref c)) = opts.subcommand {
             print_completions(c);
         }
+        debug!("Finished parsing command line arguments");
 
         Ok(())
     }
