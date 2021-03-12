@@ -1,7 +1,3 @@
-// (Full example with detailed comments in examples/01d_quick_example.rs)
-//
-// This example demonstrates clap's full 'custom derive' style of creating arguments which is the
-// simplest method of use, but sacrifices some flexibility.
 use tracing_subscriber;
 
 use sample_app::cli::Cli;
